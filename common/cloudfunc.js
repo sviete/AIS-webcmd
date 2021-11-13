@@ -196,11 +196,9 @@ module.exports.buildFromJSON = (params) => {
     }
     
     // ais remove hiden files
-    files.forEach((x, i) => console.log(x));
-
-    files = files.filter(function (el) {
-        return !el.name.startsWith(".");
-      });
+    files = files.filter((el) => {
+        return !el.name.startsWith('.');
+    });
     
     fileTable += files
         .map(updateField)
