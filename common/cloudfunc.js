@@ -126,7 +126,8 @@ module.exports.buildFromJSON = (params) => {
     
     const path = encode(json.path);
     
-    const {files} = json;
+    // ais files to filter
+    let {files} = json;
     
     /*
      * Строим путь каталога в котором мы находимся
@@ -193,6 +194,13 @@ module.exports.buildFromJSON = (params) => {
             mode: '--- --- ---',
         });
     }
+    
+    // ais remove hiden files
+    files.forEach((x, i) => console.log(x));
+
+    files = files.filter(function (el) {
+        return !el.name.startsWith(".");
+      });
     
     fileTable += files
         .map(updateField)
