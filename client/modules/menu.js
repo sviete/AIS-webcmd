@@ -125,7 +125,6 @@ function getMenuData(isAuth) {
         'Upload': () => {
             CloudCmd.Upload.show();
         },
-        'Upload From Cloud': uploadFromCloud,
         '(Un)Select All': DOM.toggleAllSelectedFiles,
     };
     
@@ -140,31 +139,30 @@ function getFileMenuData() {
     
     const menuBottom = getMenuData(isAuth);
     const menuTop = {
-        'View': () => {
+        View: () => {
             CloudCmd.View.show();
         },
-        'Edit': () => {
+        Edit: () => {
             const name = config('vim') ? 'EditFileVim' : 'EditFile';
             CloudCmd[name].show();
         },
-        'Rename': () => {
+        Rename: () => {
             setTimeout(DOM.renameCurrent, 100);
         },
-        'Delete': () => {
+        Delete: () => {
             CloudCmd.Operation.show('delete');
         },
-        'Pack': () => {
+        Pack: () => {
             CloudCmd.Operation.show('pack');
         },
-        'Extract': () => {
+        Extract: () => {
             CloudCmd.Operation.show('extract');
         },
-        'Download': preDownload,
-        'Upload To Cloud': uploadTo('Cloud'),
-        'Cut': () => {
+        Download: preDownload,
+        Cut: () => {
             isCurrent(Buffer.cut, alertNoFiles);
         },
-        'Copy': () => {
+        Copy: () => {
             isCurrent(Buffer.copy, alertNoFiles);
         },
     };
