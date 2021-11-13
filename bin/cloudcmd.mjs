@@ -320,7 +320,7 @@ async function help() {
     console.log(usage);
     console.log('Options:');
     forEachKey(log('  %s %s'), bin);
-    console.log('\nGeneral help using Cloud Commander: <%s>', url);
+    console.log('\nGeneral help using AIS Commander: <%s>', url);
 }
 
 function repl() {

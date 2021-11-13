@@ -8,7 +8,7 @@ const check = currify(_check);
 
 module.exports = (config) => {
     const auth = httpAuth.basic({
-        realm: 'Cloud Commander',
+        realm: 'AIS Commander',
     }, check(config));
     
     return middle(config, auth);

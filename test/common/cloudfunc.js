@@ -139,7 +139,7 @@ test('cloudfunc: getTitle', (t) => {
     
     const result = CloudFunc.getTitle();
     
-    t.equal(result, 'Cloud Commander - /');
+    t.equal(result, 'AIS Commander - /');
     t.end();
 });
 
@@ -151,7 +151,7 @@ test('cloudfunc: getTitle: no name', (t) => {
         path,
     });
     
-    t.equal(result, 'Cloud Commander - /hello/world');
+    t.equal(result, 'AIS Commander - /hello/world');
     t.end();
 });
 

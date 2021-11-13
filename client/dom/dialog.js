@@ -9,7 +9,7 @@ const {
     progress,
 } = require('smalltalk');
 
-const title = 'Cloud Commander';
+const title = 'AIS Commander';
 
 module.exports.alert = (...a) => alert(title, ...a, {
     cancel: false,

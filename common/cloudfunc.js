@@ -11,7 +11,7 @@ const getHeaderField = currify(_getHeaderField);
 /* КОНСТАНТЫ (общие для клиента и сервера)*/
 
 /* название программы */
-const NAME = 'Cloud Commander';
+const NAME = 'AIS Commander';
 const FS = '/fs';
 const Path = store();
 

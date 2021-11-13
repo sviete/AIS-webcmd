@@ -67,7 +67,7 @@ function CloudCmdProto(DOM) {
     this.MIN_ONE_PANEL_WIDTH = 1155;
     this.HOST = location.origin || location.protocol + '//' + location.host;
     
-    const TITLE = 'Cloud Commander';
+    const TITLE = 'AIS Commander';
     this.TITLE = TITLE;
     
     this.sort = {
