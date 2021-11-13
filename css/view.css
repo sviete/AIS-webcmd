@@ -3,6 +3,7 @@
     white-space: pre;
     height: 100%;
     overflow: auto;
+    background: #222;
 }
 
 .view:focus {
@@ -11,7 +12,7 @@
 
 .view::selection {
     text-shadow: none;
-    background: #b3d4fc;
+    background: #222;
 }
 
 .view-overlay {

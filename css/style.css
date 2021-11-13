@@ -1,6 +1,10 @@
 :root {
-    --color: rgba(49, 123, 249);
+    --color: #323232;
     --color-transparent: rgba(49, 123, 249, 0.4);
+}
+
+span > a {
+    color: white;
 }
 
 html {
@@ -11,7 +15,7 @@ body {
     width               : 100%;
     height              : 95%;
     overflow            : hidden;
-    background-color    : white;
+    background-color    : #323232;
 }
 
 body, pre, code {
@@ -61,7 +65,7 @@ body, pre, code {
 
 .path-icon {
     position: relative;
-    color: #222;
+    color: rgb(187, 183, 183);
 }
 
 .path-icon:active {
@@ -102,8 +106,8 @@ body, pre, code {
     width: 5%;
     height: 30px;
     margin: 20px 2px 0;
-    color: #222;
-    background-color: white;
+    color: white;
+    background-color: #222;
     transition: ease 0.1s;
 }
 
@@ -127,12 +131,12 @@ a {
 }
 
 a:hover, a:active {
-    color: #06e;
+    color: white;
     text-decoration: none;
 }
 
 .links a {
-    color: red;
+    color: white;
 }
 
 .mini-icon {
