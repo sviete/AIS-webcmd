@@ -29,8 +29,8 @@ const ponse = require('ponse');
 const restafary = require('restafary');
 const restbox = require('restbox');
 const konsole = require('console-io');
-// const edward = require('edward');
-const dword = require('dword');
+const edward = require('edward');
+// const dword = require('dword');
 //const deepword = require('deepword');
 const nomine = require('nomine');
 const fileop = require('@cloudcmd/fileop');
@@ -133,17 +133,17 @@ function listen({prefixSocket, socket, config}) {
     prefixSocket = getPrefix(prefixSocket);
     config.listen(socket, auth);
     
-    // edward.listen(socket, {
-    //     root,
-    //     auth,
-    //     prefixSocket: prefixSocket + '/edward',
-    // });
-    
-    dword.listen(socket, {
+    edward.listen(socket, {
         root,
         auth,
-        prefixSocket: prefixSocket + '/dword',
+        prefixSocket: prefixSocket + '/edward',
     });
+    
+    // dword.listen(socket, {
+    //     root,
+    //     auth,
+    //     prefixSocket: prefixSocket + '/dword',
+    // });
     
     // deepword.listen(socket, {
     //     root,
@@ -194,16 +194,7 @@ function cloudcmd({modules, config}) {
         
         config('terminal') && terminal(config, {}),
         
-        // edward({
-        //     root,
-        //     online,
-        //     diff,
-        //     zip,
-        //     dropbox,
-        //     dropboxToken,
-        // }),
-        
-        dword({
+        edward({
             root,
             online,
             diff,
@@ -211,6 +202,15 @@ function cloudcmd({modules, config}) {
             dropbox,
             dropboxToken,
         }),
+        
+        // dword({
+        //     root,
+        //     online,
+        //     diff,
+        //     zip,
+        //     dropbox,
+        //     dropboxToken,
+        // }),
         
         // deepword({
         //     root,

@@ -93,7 +93,7 @@
     "criton": "^2.0.0",
     "currify": "^4.0.0",
     "deepmerge": "^4.0.0",
-    "dword": "^13.0.0",
+    "edward": "^13.0.3",
     "es6-promisify": "^7.0.0",
     "execon": "^1.2.0",
     "express": "^4.13.0",

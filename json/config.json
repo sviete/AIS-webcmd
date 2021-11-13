@@ -4,7 +4,7 @@
     "username": "ais",
     "password": "dom",
     "algo": "sha512WithRSAEncryption",
-    "editor": "dword",
+    "editor": "edward",
     "packer": "tar",
     "diff": true,
     "zip": true,
