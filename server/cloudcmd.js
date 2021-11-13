@@ -29,9 +29,9 @@ const ponse = require('ponse');
 const restafary = require('restafary');
 const restbox = require('restbox');
 const konsole = require('console-io');
-const edward = require('edward');
+// const edward = require('edward');
 const dword = require('dword');
-const deepword = require('deepword');
+//const deepword = require('deepword');
 const nomine = require('nomine');
 const fileop = require('@cloudcmd/fileop');
 
@@ -133,11 +133,11 @@ function listen({prefixSocket, socket, config}) {
     prefixSocket = getPrefix(prefixSocket);
     config.listen(socket, auth);
     
-    edward.listen(socket, {
-        root,
-        auth,
-        prefixSocket: prefixSocket + '/edward',
-    });
+    // edward.listen(socket, {
+    //     root,
+    //     auth,
+    //     prefixSocket: prefixSocket + '/edward',
+    // });
     
     dword.listen(socket, {
         root,
@@ -145,11 +145,11 @@ function listen({prefixSocket, socket, config}) {
         prefixSocket: prefixSocket + '/dword',
     });
     
-    deepword.listen(socket, {
-        root,
-        auth,
-        prefixSocket: prefixSocket + '/deepword',
-    });
+    // deepword.listen(socket, {
+    //     root,
+    //     auth,
+    //     prefixSocket: prefixSocket + '/ ',
+    // });
     
     config('console') && konsole.listen(socket, {
         auth,
@@ -194,14 +194,14 @@ function cloudcmd({modules, config}) {
         
         config('terminal') && terminal(config, {}),
         
-        edward({
-            root,
-            online,
-            diff,
-            zip,
-            dropbox,
-            dropboxToken,
-        }),
+        // edward({
+        //     root,
+        //     online,
+        //     diff,
+        //     zip,
+        //     dropbox,
+        //     dropboxToken,
+        // }),
         
         dword({
             root,
@@ -212,14 +212,14 @@ function cloudcmd({modules, config}) {
             dropboxToken,
         }),
         
-        deepword({
-            root,
-            online,
-            diff,
-            zip,
-            dropbox,
-            dropboxToken,
-        }),
+        // deepword({
+        //     root,
+        //     online,
+        //     diff,
+        //     zip,
+        //     dropbox,
+        //     dropboxToken,
+        // }),
         
         fileop(),
         nomine(),
