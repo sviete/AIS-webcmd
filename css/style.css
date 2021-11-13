@@ -1,6 +1,6 @@
 :root {
     --color: #323232;
-    --color-transparent: rgba(49, 123, 249, 0.4);
+    --color-transparent: #ffba0059;
 }
 
 span > a {
