@@ -3,6 +3,22 @@
     --color-transparent: #ffba0059;
 }
 
+div.ace_editor {
+    background: #222;
+}
+
+div.ace_gutter {
+    background: #ff9800 !important;
+}
+
+div.ace_gutter-cell {
+    color: white;
+}
+
+/* div.ace_line {
+    background: #ff98006b
+} */
+
 span > a {
     color: white;
 }
@@ -73,7 +89,7 @@ body, pre, code {
 }
 
 .path-icon:hover {
-    color : #06e;
+    color : #ff9800;
     cursor: pointer;
 }
 

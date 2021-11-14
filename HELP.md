@@ -1,7 +1,7 @@
-# AIS Commander v15.9.8
+# AIS Commander
 
 
-**AIS Commander** is a file manager for the web. It includes a command-line console and a text editor. Cloud Commander helps you manage your server and work with files, directories and programs in a web browser from any computer, mobile or tablet.
+**AIS Commander** is a web app file manager. It includes a text viewer and editor. AIS Commander helps you manage your server and work with files, directories in a web browser from any computer, mobile or tablet.
 
 
 ## Hot keys
@@ -312,11 +312,6 @@ Right-mouse click to show a context menu with these items:
 | `F9`                  | open
 | `Esc`                 | close
 
-## One file panel
-
-Cloud Commander can work in one panel mode when your screen size can't accommodate a second panel (such as on mobile or tablet), or via the `--one-file-panel` options flag.
-
-![One file panel](/img/screen/one-file-panel.png "One file panel")
 
 ## Using as middleware
 
