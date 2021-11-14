@@ -22,7 +22,6 @@
 | `Shift + Delete`      | remove without prompt
 | `F9`                  | menu
 | `Alt` + `F9`          | extract
-| `F10`                 | config
 | `*`                   | select/unselect all
 | `+`                   | expand selection
 | `-`                   | shrink selection
