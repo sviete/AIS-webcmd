@@ -1,7 +1,7 @@
 # AIS Commander
 
 
-**AIS Commander** to menedżer plików zbudowany jako aplikacja internetowa. Zawiera przeglądarkę plików (tekst, audio, wideo) oraz edytor plików tekstowych. AIS Commander pomaga zarządzać serwerem AIS dom i pracować z plikami, katalogami w przeglądarce internetowej z dowolnego komputera, telefonu komórkowego lub tabletu.
+**AIS Commander** to menedżer plików działający w przeglądarce Internetowej. Zawiera przeglądarkę plików (tekst, audio, wideo) oraz edytor plików tekstowych. AIS Commander pomaga zarządzać serwerem AIS dom i pracować z plikami, katalogami w przeglądarce internetowej z dowolnego komputera, telefonu komórkowego lub tabletu.
 
 ## Klawisze skrótu
 
