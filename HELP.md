@@ -125,4 +125,3 @@ Kliknij prawym przyciskiem myszy, aby wyświetlić menu kontekstowe z następuj�
 |:----------------------|:--------------------------------------------
 | `F9`                  | open
 | `Esc`                 | close
-
