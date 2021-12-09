@@ -8,7 +8,10 @@ const fs = require('fs');
 const tryToCatch = require('try-to-catch');
 const {test, stub} = require('supertape');
 const mockRequire = require('mock-require');
-const {reRequire, stopAll} = mockRequire;
+const {
+    reRequire,
+    stopAll,
+} = mockRequire;
 
 const fixtureDir = path.join(__dirname, '..', 'test', 'fixture');
 
@@ -301,7 +304,7 @@ test('cloudcmd: route: sendIndex: encode: not encoded', async (t) => {
 });
 
 test('cloudcmd: route: sendIndex: ddos: render', async (t) => {
-    const name = '$$$\'&quot;';
+    const name = `$$$'&quot;`;
     const path = '/';
     const files = [{
         name,
@@ -481,13 +484,13 @@ test('cloudcmd: route: read: root', async (t) => {
     
     await request.get('/fs/route.js');
     
-    stopAll();
-    
     const expected = [
         '/hello/route.js', {
             root,
         },
     ];
+    
+    stopAll();
     
     t.calledWith(read, expected);
     t.end();

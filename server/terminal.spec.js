@@ -9,6 +9,8 @@ const terminalPath = './terminal';
 const terminal = require('./terminal');
 const {createConfigManager} = require('./cloudcmd');
 
+const {stopAll} = mockRequire;
+
 test('cloudcmd: terminal: disabled', (t) => {
     const config = createConfigManager();
     config('terminal', false);
@@ -38,6 +40,8 @@ test('cloudcmd: terminal: enabled', (t) => {
     const terminal = require(terminalPath);
     terminal(arg);
     
+    stopAll();
+    
     t.calledWith(term, [arg], 'should call terminal');
     t.end();
 });
@@ -55,7 +59,7 @@ test('cloudcmd: terminal: enabled: no string', (t) => {
     
     console.log = originalLog;
     
-    const msg = 'cloudcmd --terminal: Cannot find module \'hello\'';
+    const msg = `cloudcmd --terminal: Cannot find module 'hello'`;
     const [arg] = log.args[0];
     
     t.match(arg, RegExp(msg), 'should call with msg');
@@ -67,12 +71,13 @@ test('cloudcmd: terminal: no arg', (t) => {
     
     mockRequire('gritty', gritty);
     const config = createConfigManager();
+    
     config('terminal', true);
     config('terminalPath', 'gritty');
     
     const result = terminal(config);
     
-    mockRequire.stop('gritty');
+    stopAll();
     
     t.equal(result, gritty);
     t.end();

@@ -41,7 +41,7 @@ function CloudCmdProto(DOM) {
     let Listeners;
     
     const log = (...a) => {
-        if (!isDev )
+        if (!isDev)
             return;
         
         console.log(...a);
@@ -382,7 +382,12 @@ function CloudCmdProto(DOM) {
             noCurrent,
         } = options;
         
-        const names = ['file', 'path', 'link', 'pathLink'];
+        const names = [
+            'file',
+            'path',
+            'link',
+            'pathLink',
+        ];
         
         const [
             error,
