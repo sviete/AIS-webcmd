@@ -1,6 +1,6 @@
 {
   "name": "aiscmd",
-  "version": "15.9.11",
+  "version": "15.9.13",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "File manager for the web with console and editor",
   "homepage": "https://ai-speaker.com",
@@ -118,7 +118,7 @@
     "package-json": "^7.0.0",
     "ponse": "^6.0.0",
     "pullout": "^4.0.0",
-    "putout": "^22.0.2",
+    "putout": "^23.0.0",
     "redzip": "^2.0.0",
     "rendy": "^3.0.0",
     "restafary": "^10.0.0",
