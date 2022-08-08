@@ -15,7 +15,7 @@
     "keysPanel": true,
     "port": 8000,
     "ip": null,
-    "root": "/data/data/com.termux/files/home",
+    "root": "/data/data/com.termux/files",
     "prefix": "",
     "prefixSocket": "",
     "contact": false,
